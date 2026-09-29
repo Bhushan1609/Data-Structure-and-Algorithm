@@ -5,7 +5,7 @@ using namespace std;
 
 void linear_search(int num,vector<int>&vec){
     int n=vec.size();
-    for(int i=0;i<vec.size();i++){
+    for(int i=0;i<vec.size();i++){                                      //O(N)
         if(vec[i]==num){
             cout<<"Found "<<num<<" at index : "<<i<<endl;
             return ;
