@@ -1,4 +1,4 @@
-//Problem-Link : https://www.naukri.com/code360/problems/intersection-of-2-arrays_1082149
+//Problem-Link : http://leetcode.com/problems/majority-element/description/
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -33,7 +33,7 @@ void call_better(vector<int>&vec){                  // O(nlogn)
 void call_optimal(vector<int>&vec){
     int n=vec.size(),element=-1,cnt=0;
 
-    for(int i=0;i<n;i++){                   // O(n)
+    for(int i=0;i<n;i++){                   // O()
         if(cnt==0){
             cnt++;
             element=vec[i];
