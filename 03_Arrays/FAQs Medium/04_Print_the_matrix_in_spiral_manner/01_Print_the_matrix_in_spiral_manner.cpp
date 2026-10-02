@@ -9,24 +9,22 @@ vector<int>spiral_mat(vector<vector<int>>&vec){
     vector<int>ans;
 
     while(left<=right && top<=bottom){
-        // left to right
+
         for(int j=left;j<=right;j++)
             ans.push_back(vec[top][j]);
         top++;
 
-        // right to bottom
         for(int i=top;i<=bottom;i++)
             ans.push_back(vec[i][right]);
         right--;
 
-        //right to left
         if(top<=bottom){
             for(int j=right;j>=left;j--)
                 ans.push_back(vec[bottom][j]);
+
             bottom--;
         }
 
-        //bottom to top
         if(left<=right){
             for(int i=bottom;i>=top;i--)
                 ans.push_back(vec[i][left]);
