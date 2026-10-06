@@ -34,7 +34,7 @@ int call_optimal(vector<int>&vec){
     int n=vec.size();
     int prefix=1,suffix=1,maxi=INT_MIN;
 
-    for(int i=0;i<n;i++){
+    for(int i=0;i<n;i++){                                       // O(n)
         if(prefix==0) prefix=1;
         if(suffix==0) suffix=1;
         prefix*=vec[i];
