@@ -1,4 +1,4 @@
-// Problem Link : https://leetcode.com/problems/lemonade-change/description/
+// Problem Link : https://www.geeksforgeeks.org/problems/fractional-knapsack-1587115620/1
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -18,10 +18,10 @@ double fractionalKnapsack(vector<int>& val, vector<int>& wt, int capacity) {
     for(int i=0;i<n;i++)
         vec.push_back({val[i],wt[i]});
 
-    sort(vec.begin(),vec.end(),compare);
+    sort(vec.begin(),vec.end(),compare);        //O(nlogn)
 
     int it=0;
-    while(capacity && it<vec.size()){
+    while(capacity && it<vec.size()){                   // O(n)
         if(vec[it][1]>capacity){
             ans += (1.0*vec[it][0]/vec[it][1])*capacity;
             break;
