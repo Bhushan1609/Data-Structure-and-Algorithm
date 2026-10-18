@@ -1,4 +1,4 @@
-// Problem Link : https://www.geeksforgeeks.org/problems/shortest-job-first/1
+// Problem Link : https://www.geeksforgeeks.org/problems/job-sequencing-problem-1587115620/1
 
 #include<bits/stdc++.h>
 using namespace std;
