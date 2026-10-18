@@ -1,4 +1,4 @@
-// Problem Link : https://www.geeksforgeeks.org/problems/job-sequencing-problem-1587115620/1
+// Problem Link : http://geeksforgeeks.org/problems/maximum-meetings-in-one-room/1
 
 #include<bits/stdc++.h>
 using namespace std;
